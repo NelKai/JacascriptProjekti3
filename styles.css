@@ -1,36 +1,81 @@
 body {
-    margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(161, 170, 216);
-}
-
-h1 {
-    padding: 10px;
-    text-transform: uppercase;
+    background: rgb(200, 181, 209);
 }
 
 #content {
+    border-radius: 5px;
+}
+
+h1, h2 {
     text-align: center;
-    border: 5px solid white;
-    padding: 10px;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 3px 3px 3px 3px;
+    background: rgb(200, 181, 209);
+    color: black;
+    text-align: center;
+} 
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+ul, li:hover {
+    background: white;
+    color: rgb(200, 181, 209);
+}
+
+#lisaaNappi, #naytaNappi, #piilotusNappi, #tyhjennysNappi {
+    padding: 3px 3px;
+    color: black;
+    background: rgb(200, 181, 209);
+    border-radius: 5px;
+}
+
+#lisaaNappi:hover, #naytaNappi:hover, #piilotusNappi:hover, #tyhjennysNappi:hover {
+    background: #ffffff;
+    color: rgb(200, 181, 209);
+}
+
+#toDoLomake {
+    text-align: center;
+}
+
+fieldset {
     background: white;
 }
 
-a {
+#lomakeAlue {
+    border-radius: 25px;
+}
+
+#toDoLista {
+    position: absolute;
+    left: 25%;
+}
+
+.cbox {
+    float: left;
+}
+
+input[type='checkbox']:checked+label {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.poistoNappi {
+    background: white;
     color: black;
+    float: right;
+    border-radius: 5px;
 }
 
-a:hover {
-    color: rgb(161, 170, 216);
+.poistoNappi:hover {
+    background: rgb(200, 181, 209);
+    color: white;
 }
-
-#faktanappi {
-    padding: 3px;
-    font-size: 13px;
-}
-
-#faktanappi:hover {
-    background: rgb(161, 170, 216);
-}
-
-

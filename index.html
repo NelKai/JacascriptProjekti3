@@ -11,27 +11,36 @@
 <body>
 
     <div id="content">
-        <h1>Faktoja kissoista</h1>
+        <h1>To Do -lista</h1>
 
-        <div id="info">
-            <p>Faktat haettu <a target=_blank href='https://cat-fact.herokuapp.com/facts'>tästä osoitteesta</a></p>
-            <input type="button" id="faktanappi" value="Hae fakta">
-            
-            <p></p>
+        <div id="lomakeAlue">
+            <form action="" id="toDoLomake">
+                <fieldset id="lomakeAlue">
+                    <p>Rakenna oma to-do -listasi!</p>
+                    <input type="text" id="input" placeholder="Syötä tehtävä">
+                    <input type="button" id="lisaaNappi" value="Lisää tehtävä">
+
+                    <br><br>
+
+                    <input type="button" id="naytaNappi" value="Näytä lista">
+                    <input type="button" id="piilotusNappi" value="Piilota lista">
+                    <input type="button" id="tyhjennysNappi" value="Tyhjennä lista">
+            </fieldset>
+            </form>
         </div>
+        <div id="listaAlue">
+            <ul id="toDoLista">
+                <!-- Kohta, johon lista ilmestyy -->
+            </ul>
 
-        <div id="kuvat">
-            <p></p>
         </div>
         
-        <div id="faktadiv">
-            <p></p>
-        </div>
     </div>
-    
+
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="projekti3.js"></script>
     
+
 </body>
 
 </html>
